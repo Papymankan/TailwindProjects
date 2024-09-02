@@ -8,8 +8,8 @@ function Home() {
           Tailwind Mini-Projects
         </h2>
         <div className="w-7/8 mt-12 flex flex-wrap justify-evenly lg:w-5/6">
-          <Card to={'/emailcard'} title='Email Card'/>
-          <Card />
+          <Card to={'/emailcard'} title='Email Card' src='/img/email-card-thumbnail.png'/>
+          <Card to={'/pricingcards'} title='Pricing Cards' src='/img/pricing-cards-thumbnail.png'/>
           <Card />
           <Card />
           <Card />
