@@ -10,7 +10,7 @@ function Home() {
         <div className="w-7/8 mt-12 flex flex-wrap justify-evenly lg:w-5/6">
           <Card to={'/emailcard'} title='Email Card' src='/img/email-card-thumbnail.png'/>
           <Card to={'/pricingcards'} title='Pricing Cards' src='/img/pricing-cards-thumbnail.png'/>
-          <Card />
+          <Card to={'/productmodal'} title='Product Modal' src='/img/product-modal-thumbnail.png'/>
           <Card />
           <Card />
           <Card />
