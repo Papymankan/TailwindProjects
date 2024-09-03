@@ -11,7 +11,7 @@ function Home() {
           <Card to={'/emailcard'} title='Email Card' src='/img/email-card-thumbnail.png'/>
           <Card to={'/pricingcards'} title='Pricing Cards' src='/img/pricing-cards-thumbnail.png'/>
           <Card to={'/productmodal'} title='Product Modal' src='/img/product-modal-thumbnail.png'/>
-          <Card />
+          <Card to={'/imagegallery'} title='Image Gallery' src='/img/image-gallery-thumbnail.png'/>
           <Card />
           <Card />
         </div>
