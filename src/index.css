@@ -2,4 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-zinc-600;
+}
 
+/* mini projects */
+
+.gallery-layer {
+  background-color: rgba(0, 0, 0, 0.404) !important;
+}
+
+/* mini projects */
+
+/* ClipBoard */
+
+.section-title{
+    @apply mt-10 text-center text-3xl font-bold text-darkGrayishBlue md:text-5xl
+}
+
+/* ClipBoard */

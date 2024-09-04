@@ -1,7 +1,0 @@
-body {
-  @apply  bg-zinc-600;
-}
-
-.gallery-layer{
-  background-color: rgba(0, 0, 0, 0.404) !important;
-}
