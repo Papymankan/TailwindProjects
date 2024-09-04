@@ -1,3 +1,4 @@
+import Clipboard from "./Pages/Clipboard/Clipboard";
 import EmailCard from "./Pages/EmailCard/EmailCard";
 import Home from "./Pages/Home/Home";
 import ImageGallery from "./Pages/ImageGallery/ImageGallery";
@@ -12,6 +13,7 @@ const routes = [
     { path: '/productmodal', element: <ProductModal /> },
     { path: '/imagegallery', element: <ImageGallery /> },
     { path: '/loginmodal', element: <LoginModal /> },
+    { path: '/clipboard', element: <Clipboard /> },
 ]
 
 export default routes
