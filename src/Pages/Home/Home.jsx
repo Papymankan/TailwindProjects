@@ -7,13 +7,12 @@ function Home() {
         <h2 className="mt-10 text-2xl font-bold sm:text-4xl">
           Tailwind Mini-Projects
         </h2>
-        <div className="w-7/8 mt-12 flex flex-wrap justify-evenly lg:w-5/6">
+        <div className="w-7/8 mt-12 grid grid-cols-1 gap-3 grid-rows-5 lg:w-5/6 md:grid-cols-3 sm:grid-cols-2">
           <Card to={'/emailcard'} title='Email Card' src='/img/email-card-thumbnail.png'/>
           <Card to={'/pricingcards'} title='Pricing Cards' src='/img/pricing-cards-thumbnail.png'/>
           <Card to={'/productmodal'} title='Product Modal' src='/img/product-modal-thumbnail.png'/>
           <Card to={'/imagegallery'} title='Image Gallery' src='/img/image-gallery-thumbnail.png'/>
-          <Card />
-          <Card />
+          <Card to={'/loginmodal'} title='Login Modal' src='/img/login-modal-thumbnail.png' />
         </div>
       </div>
     </>

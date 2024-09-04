@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Card({ to, title , src}) {
   return (
-    <Link to={to} className="w-full sm:w-1/2 md:w-[31%]">
+    <Link to={to} className="w-full ">
       <div className="group mt-6 w-full cursor-pointer rounded-md bg-slate-300 p-4 shadow-2xl transition-all hover:scale-105">
         <img
           src={src}
