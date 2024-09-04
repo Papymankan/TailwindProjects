@@ -12,5 +12,5 @@ export default function Card({ to, title , src}) {
         <h3 className="mt-6 text-xl text-slate-900">{title}</h3>
       </div>
     </Link>
-  );
+  ); 
 }
