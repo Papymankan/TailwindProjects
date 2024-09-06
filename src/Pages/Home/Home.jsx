@@ -9,6 +9,11 @@ function Home() {
         </h2>
         <div className="w-7/8 mt-8 grid grid-cols-1 grid-rows-5 gap-3 sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2">
           <Card
+            to={"/loopstudio"}
+            title="Loopstudio"
+            src="/img/assets/Loopstudio/thumbnail.png"
+          />
+          <Card
             to={"/clipboard"}
             title="Clipboard"
             src="/img/assets/Clipboard/thumbnail.png"

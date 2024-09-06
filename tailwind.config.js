@@ -17,6 +17,8 @@ export default {
       },
       fontFamily: {
         clipboard: ['Bai Jamjuree', 'sans-serif'],
+        josefin : ['Josefin Sans' , 'Sans'],
+        alata:['Alata']
       },
     },
   },

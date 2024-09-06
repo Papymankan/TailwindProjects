@@ -21,3 +21,19 @@ body {
 }
 
 /* ClipBoard */
+/* Loopstudio */
+
+.loopstudio-hero{
+  background-image: url('/public/img/assets/Loopstudio/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width : 576px) {
+  .loopstudio-hero{
+    background-image: url('/public/img/assets/Loopstudio/mobile/image-hero.jpg');
+    background-position: center;
+  }
+}
+
+/* Loopstudio */
