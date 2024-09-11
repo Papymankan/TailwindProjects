@@ -54,18 +54,23 @@ export default function Loopstudio() {
           impressive experiences that deliver
         </div>
       </div>
+
       {/* feature section */}
-      <div className="relative mx-auto my-32 flex max-w-6xl flex-col px-6 py-10 md:flex-row md:px-0 text-gray-900">
-
-
-        <img src="/img/assets/Loopstudio/desktop/image-interactive.jpg" className="hidden md:block" />
-        <img src="/img/assets/Loopstudio/mobile/image-interactive.jpg"  className="md:hidden"/>
+      <div className="relative mx-auto my-20 flex max-w-6xl flex-col px-16 py-10 text-gray-900 md:flex-row md:px-0">
+        <img
+          src="/img/assets/Loopstudio/desktop/image-interactive.jpg"
+          className="hidden md:block"
+        />
+        <img
+          src="/img/assets/Loopstudio/mobile/image-interactive.jpg"
+          className="md:hidden"
+        />
 
         <div className="mt-12 bg-white font-josefin md:absolute md:right-0 md:top-72 md:mt-0 md:py-12 md:pl-10 lg:top-48 lg:py-20 lg:pl-20">
-          <h1 className="text-center text-4xl md:text-5xl md:font-normal font-semibold uppercase md:max-w-lg md:text-left">
+          <h1 className="text-center text-4xl font-semibold uppercase md:max-w-lg md:text-left md:text-5xl md:font-normal">
             The leader in interactive vr
           </h1>
-          <p className="mt-8 font-semibold md:max-w-md md:text-left text-center">
+          <p className="mt-8 text-center font-semibold md:max-w-md md:text-left">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
@@ -73,6 +78,156 @@ export default function Loopstudio() {
           </p>
         </div>
       </div>
+
+      {/* Images section */}
+
+      <div className="w-full md:px-16 px-5 font-josefin">
+        <div className="w-full items-center justify-between flex">
+          <h1 className="text-5xl uppercase w-full md:w-auto text-center md:text-left">Our Creations</h1>
+          <button className="rounded-sm border-2 border-black px-10 py-3 font-semibold duration-200 hover:bg-black hover:text-white hidden md:block tracking-widest">
+            SEE ALL
+          </button>
+        </div>
+        <div className="hidden md:flex w-full flex-wrap justify-between">
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              the curiosity
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-curiosity.jpg" />
+          </div>
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              deep earth
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-deep-earth.jpg" />
+          </div>
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              make it fisheye
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-fisheye.jpg" />
+          </div>
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              from up above vr
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-from-above.jpg" />
+          </div>
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              night arcade
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-night-arcade.jpg" />
+          </div>
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              pocket borealis
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-pocket-borealis.jpg" />
+          </div>
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              soccer team vr
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-soccer-team.jpg" />
+          </div>
+          <div className="w-[23%] mt-10 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end lg:p-10 p-3 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              the grid
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/desktop/image-grid.jpg" />
+          </div>
+        </div>
+        <div className="flex md:hidden w-full flex-wrap justify-between">
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              the curiosity
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-curiosity.jpg" />
+          </div>
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              deep earth
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-deep-earth.jpg" />
+          </div>
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              make it fisheye
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-fisheye.jpg" />
+          </div>
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              from up above vr
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-from-above.jpg" />
+          </div>
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              night arcade
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-night-arcade.jpg" />
+          </div>
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              pocket borealis
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-pocket-borealis.jpg" />
+          </div>
+
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              soccer team vr
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-soccer-team.jpg" />
+          </div>
+
+        
+          <div className="w-full mt-6 relative group overflow-hidden">
+            <div className="z-10 w-full h-full top-0 right-0 absolute duration-200 transition-colors uppercase images-container flex items-end p-4 text-white text-2xl">
+              <p className="max-w-36 group-hover:scale-110 duration-200 group-hover:font-semibold group-hover:text-black">
+              the grid
+              </p>
+            </div>
+            <img className="w-full object-cover group-hover:scale-105 duration-200 transition" src="/img/assets/Loopstudio/mobile/image-grid.jpg" />
+          </div>
+        </div>
+        <button className="w-full rounded-sm border-2 border-black px-10 py-3 font-semibold duration-200 hover:bg-black hover:text-white mt-10 tracking-widest block md:hidden">
+            SEE ALL
+          </button>
+      </div>
+
       <br />
       <br />
       <br />
