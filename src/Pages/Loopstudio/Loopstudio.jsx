@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Loopstudio() {
+
+  const [showMenu , setShowMenu] = useState(false)
+
   return (
     <div className="min-h-screen w-full bg-white">
       {/* Hero */}
@@ -48,6 +51,39 @@ export default function Loopstudio() {
             </div>
           </div>
           {/* Nav Hamburger */}
+          <button className={`z-50 h-8 w-8 block md:hidden cursor-pointer hamburger space-y-2 ${showMenu && 'space-y-0'}`} onClick={()=>setShowMenu(!showMenu)}>
+            <div className={`hamburger-top w-8 border duration-200 ${showMenu && 'rotate-45'}`}></div>
+            <div className={`hamburger-top w-8 border duration-200 ${showMenu && 'hidden'}`}></div>
+            <div className={`hamburger-top w-8 border duration-200 ${showMenu && '-rotate-45'}`}></div>
+          </button>
+
+          <div className={`absolute top-0 bottom-0 left-0 right-0 w-full min-h-screen ${showMenu ? 'flex' : 'hidden'} flex-col pl-10 bg-black z-40 text-white pt-32 space-y-3 text-xl overflow-hidden font-josefin`}>
+            <div className="cursor-pointer hover:scale-105  duration-200">
+              <a href="#" className="">
+                About
+              </a>
+            </div>
+            <div className="cursor-pointer hover:scale-105 duration-200">
+              <a href="#" className="">
+                Careers
+              </a>
+            </div>
+            <div className="cursor-pointer hover:scale-105 duration-200">
+              <a href="#" className="">
+                Events
+              </a>
+            </div>
+            <div className="cursor-pointer hover:scale-105 duration-200">
+              <a href="#" className="">
+                Products
+              </a>
+            </div>
+            <div className="cursor-pointer hover:scale-105 duration-200">
+              <a href="#" className="">
+                Support
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="mx-auto my-32 max-w-lg border-2 p-4 font-josefin text-4xl uppercase text-white md:mx-0 md:p-10 md:text-6xl">
@@ -279,7 +315,7 @@ export default function Loopstudio() {
 
       {/* footer */}
 
-      <div className="mt-16 flex w-full flex-col items-center bg-black px-10 py-6 text-white md:flex-row md:justify-between">
+      <div className="mt-16 flex w-full flex-col items-center bg-black px-10 py-6 text-white md:flex-row md:justify-between font-josefin">
         <div>
           <svg width="192" height="32" xmlns="http://www.w3.org/2000/svg">
             <path
