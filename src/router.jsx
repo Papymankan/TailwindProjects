@@ -6,6 +6,7 @@ import LoginModal from "./Pages/LoginModal/LoginModal";
 import Loopstudio from "./Pages/Loopstudio/Loopstudio";
 import PricingCards from "./Pages/PricingCards/PricingCards";
 import ProductModal from "./Pages/ProductModal/ProductModal";
+import Shortly from "./Pages/Shortly/Shortly";
 
 const routes = [
     { path: '/', element: <Home /> },
@@ -16,6 +17,7 @@ const routes = [
     { path: '/loginmodal', element: <LoginModal /> },
     { path: '/clipboard', element: <Clipboard /> },
     { path: '/loopstudio', element: <Loopstudio /> },
+    { path: '/shortly', element: <Shortly /> },
 ]
 
 export default routes
