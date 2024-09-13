@@ -1,6 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Shortly() {
+  const [inputValue, setInputValue] = useState("");
+  const [error, setError] = useState("");
+  const [render, setRender] = useState(0);
+
+  // useEffect(() => {
+  //     if (inputValue.length == 0) {
+  //       setError("Please type your link");
+  //     } else {
+  //       if (validURL(inputValue)) {
+  //         setError("");
+  //       } else {
+  //         setError("error");
+  //       }
+  //     }
+  // }, [inputValue]);
+
+  const submitHandler = ()=>{
+    if (inputValue.length == 0) {
+      setError("Please type your link");
+    } else {
+      if (validURL(inputValue)) {
+        setError("");
+      } else {
+        setError("Please type a valid link");
+      }
+    }
+  }
+
+  function validURL(str) {
+    var pattern = new RegExp(
+      "^(https?:\\/\\/)?" + // protocol
+        "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" +
+        "((\\d{1,3}\\.){3}\\d{1,3}))" +
+        "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" +
+        "(\\?[;&a-z\\d%_.~+=-]*)?" +
+        "(\\#[-a-z\\d_]*)?$",
+      "i",
+    );
+    return !!pattern.test(str);
+  }
+
   return (
     <>
       <div className="min-h-screen w-full bg-white">
@@ -65,15 +106,21 @@ export default function Shortly() {
 
         <div className="relative mt-24 w-full space-y-4 bg-gray-100 px-4 py-8">
           {/* link input */}
-          <div className="mx-auto -mt-24 flex max-w-4xl flex-col items-center justify-between space-x-5 rounded-xl bg-veryDarkBlue p-8 md:flex-row">
+          <div className="relative mx-auto -mt-24 flex max-w-4xl flex-col items-center justify-between space-x-5 rounded-xl bg-veryDarkBlue p-8 md:flex-row">
             <input
               type="text"
               placeholder="shorten a link here"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
               className="w-full flex-1 rounded-xl px-4 py-3 text-lg placeholder:text-yellow-500 focus:outline-none"
             />
-            <button className="mt-5 rounded-xl bg-cyan px-6 py-3 text-lg text-white md:mt-0">
+            <button className="mt-5 rounded-xl bg-cyan px-6 py-3 text-lg text-white md:mt-0" onClick={submitHandler}>
               Shorten it !
             </button>
+
+            <p className="absolute bottom-2 left-7 text-sm italic text-red">
+              {error}
+            </p>
           </div>
 
           {/* shorten Links */}
