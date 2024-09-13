@@ -3,9 +3,9 @@ import React from "react";
 export default function Shortly() {
   return (
     <>
-      <div className="min-h-screen w-full bg-white px-12">
+      <div className="min-h-screen w-full bg-white">
         {/* navbar */}
-        <div className="relative flex w-full items-center justify-between py-10">
+        <div className="relative flex w-full items-center justify-between px-12 py-10">
           <div className="flex items-center justify-between">
             <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33">
               <path
@@ -14,7 +14,7 @@ export default function Shortly() {
               />
             </svg>
 
-            <div className="text-grayishViolet ml-16 hidden items-center space-x-8 text-lg font-semibold lg:flex">
+            <div className="ml-16 hidden items-center space-x-8 text-lg font-semibold text-grayishViolet lg:flex">
               <a href="#" className="duration-200 hover:text-black">
                 Features
               </a>
@@ -28,13 +28,91 @@ export default function Shortly() {
           </div>
 
           <div className="hidden items-center space-x-5 lg:flex">
-            <button className="text-grayishViolet px-4 py-3 duration-200 hover:text-black">
+            <button className="px-4 py-3 text-grayishViolet duration-200 hover:text-black">
               Login
             </button>
 
-            <button className="bg-cyan rounded-full px-8 py-3 text-white duration-200 hover:opacity-70">
+            <button className="rounded-full bg-cyan px-8 py-3 text-white duration-200 hover:opacity-70">
               Sign Up
             </button>
+          </div>
+        </div>
+
+        {/* hero */}
+
+        <div className="flex w-full flex-col-reverse items-center justify-between px-12 lg:flex-row">
+          <div className="flex w-full flex-col items-center py-16 lg:w-[50%] lg:items-start">
+            <h1 className="text-center font-poppins text-4xl font-bold text-veryDarkViolet md:text-5xl lg:text-left lg:text-7xl">
+              More than just shorter links
+            </h1>
+            <p className="mt-6 w-full text-center text-xl font-semibold text-grayishViolet lg:max-w-md lg:text-left lg:text-2xl">
+              Build your brand's recognition and get detailed insights on how
+              your links are performing
+            </p>
+            <button className="mx-auto mt-10 rounded-full bg-cyan px-12 py-5 text-2xl font-extrabold text-white duration-200 hover:opacity-70 lg:mx-0">
+              Get Started
+            </button>
+          </div>
+
+          <div className="h-auto w-full md:w-[70%] lg:w-[50%]">
+            <img
+              src="/img/assets/Shortly/illustration-working.svg"
+              className="w-full"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="relative mt-24 w-full space-y-4 bg-gray-100 px-4 py-8">
+          {/* link input */}
+          <div className="mx-auto -mt-24 flex max-w-4xl flex-col items-center justify-between space-x-5 rounded-xl bg-veryDarkBlue p-8 md:flex-row">
+            <input
+              type="text"
+              placeholder="shorten a link here"
+              className="w-full flex-1 rounded-xl px-4 py-3 text-lg placeholder:text-yellow-500 focus:outline-none"
+            />
+            <button className="mt-5 rounded-xl bg-cyan px-6 py-3 text-lg text-white md:mt-0">
+              Shorten it !
+            </button>
+          </div>
+
+          {/* shorten Links */}
+
+          <div className="mx-auto flex max-w-4xl flex-col items-center justify-between rounded-xl bg-white p-6 md:flex-row">
+            <p className="text-center text-lg font-bold md:text-left">
+              https://frontendmentor.io
+            </p>
+            <div className="flex flex-col items-center justify-between md:flex-row">
+              <p className="mr-6 font-bold text-cyan">https://rel.ink/k4IKyk</p>
+              <button class="mt-2 rounded-lg bg-cyan p-2 px-8 text-white hover:opacity-70 focus:outline-none md:mt-0">
+                Copy
+              </button>
+            </div>
+          </div>
+
+          <div className="mx-auto flex max-w-4xl flex-col items-center justify-between rounded-xl bg-white p-6 md:flex-row">
+            <p className="text-center text-lg font-bold md:text-left">
+              {" "}
+              https://twitter.com/frontendmentor
+            </p>
+            <div className="flex flex-col items-center justify-between md:flex-row">
+              <p className="mr-6 font-bold text-cyan">https://rel.ink/gxOXp9</p>
+              <button class="mt-2 rounded-lg bg-cyan p-2 px-8 text-white hover:opacity-70 focus:outline-none md:mt-0">
+                Copy
+              </button>
+            </div>
+          </div>
+
+          <div className="mx-auto flex max-w-4xl flex-col items-center justify-between rounded-xl bg-white p-6 md:flex-row">
+            <p className="text-center text-lg font-bold md:text-left">
+              https://linkedin.com/frontend-mentor
+            </p>
+            <div className="flex flex-col items-center justify-between md:flex-row">
+              <p className="mr-6 font-bold text-cyan">https://rel.ink/gob3X9</p>
+              <button class="mt-2 rounded-lg bg-cyan p-2 px-8 text-white hover:opacity-70 focus:outline-none md:mt-0">
+                Copy
+              </button>
+            </div>
           </div>
         </div>
       </div>
