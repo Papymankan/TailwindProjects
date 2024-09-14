@@ -29,6 +29,7 @@ export default {
         josefin : ['Josefin Sans' , 'Sans'],
         alata:['Alata'],
         poppins: ['Poppins', 'sans-serif'],
+        grid: ['Barlow Semi Condensed', 'sans-serif'],
       },
       spacing: {
         180: '32rem',

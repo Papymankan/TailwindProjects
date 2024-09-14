@@ -7,6 +7,7 @@ import Loopstudio from "./Pages/Loopstudio/Loopstudio";
 import PricingCards from "./Pages/PricingCards/PricingCards";
 import ProductModal from "./Pages/ProductModal/ProductModal";
 import Shortly from "./Pages/Shortly/Shortly";
+import TestimonailGrid from "./Pages/TestimonailGrid/TestimonailGrid";
 
 const routes = [
     { path: '/', element: <Home /> },
@@ -18,6 +19,7 @@ const routes = [
     { path: '/clipboard', element: <Clipboard /> },
     { path: '/loopstudio', element: <Loopstudio /> },
     { path: '/shortly', element: <Shortly /> },
+    { path: '/testimonial-grid', element: <TestimonailGrid /> },
 ]
 
 export default routes
