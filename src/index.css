@@ -76,4 +76,21 @@ body {
   }
 }
 
+
 /* Loopstudio */
+/* Shortly */
+
+.cta-section{
+  background-image: url('/img/assets/Shortly/bg-boost-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 976px) {
+  .cta-section {
+    background-image: url("/img/assets/Shortly/bg-boost-mobile.svg");
+    background-position: center;
+  }
+}
+
+/* Shortly */

@@ -152,7 +152,9 @@ export default function Shortly() {
             </div>
           </div>
         </div>
-        <div className="w-full bg-gray-100 font-poppins">
+
+        {/* Advanced Statistics */}
+        <div className="w-full bg-gray-100 pb-40 font-poppins">
           <div className="w-full py-20">
             <h1 className="text-center text-4xl font-bold">
               Advanced Statistics
@@ -232,6 +234,18 @@ export default function Shortly() {
                 customizable links, supercharging audience engagement.
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className="cta-section relative flex w-full items-center justify-center bg-darkViolet py-32">
+          <div className="flex flex-col items-center justify-center px-4">
+            <h1 className="z-20 text-center font-bold text-white text-3xl md:text-4xl lg:text-5xl">
+              Boost your links today
+            </h1>
+            <button className="z-10 mx-auto mt-10 rounded-full bg-cyan px-12 py-5 text-xl lg:text-2xl font-extrabold text-white duration-200 hover:opacity-70 lg:mx-0">
+              Get Started
+            </button>
           </div>
         </div>
       </div>
