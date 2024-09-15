@@ -4,10 +4,10 @@ export default function TestimonailGrid() {
   return (
     <>
       <div className="min-h-screen w-full bg-gray-200 font-grid">
-        <div className="container mx-auto max-w-7xl border-2 border-black p-2 md:p-10">
-          <div className="text-white">
+        <div className="container mx-auto max-w-7xl p-2 md:p-10">
+          <div className="text-white grid lg:grid-cols-4 lg:grid-rows-2 gap-4">
             {/* Box 1 */}
-            <div className="relative rounded-xl bg-purple-700 p-10">
+            <div className="relative rounded-xl bg-purple-700 p-7 lg:col-span-2">
               <img
                 src="/img/assets/Testimonial-grid/bg-pattern-quotation.svg"
                 className="absolute right-10 top-8 z-0 scale-125 md:right-24 md:scale-150"
@@ -50,7 +50,7 @@ export default function TestimonailGrid() {
             </div>
 
             {/* Box 2 */}
-            <div className="relative rounded-xl bg-gray-600 p-10">
+            <div className="relative rounded-xl bg-gray-600 p-7">
               <div className="flex items-center">
                 <img
                   src="/img/assets/Testimonial-grid/image-jonathan.jpg"
@@ -81,7 +81,7 @@ export default function TestimonailGrid() {
             </div>
 
             {/* Box 3 */}
-            <div className="hidden relative rounded-xl bg-white p-10 text-gray-900">
+            <div className="hidden lg:block relative rounded-xl bg-white p-7 text-gray-900 lg:row-span-2">
               <div className="flex items-center">
                 <img
                   src="/img/assets/Testimonial-grid/image-kira.jpg"
@@ -96,7 +96,7 @@ export default function TestimonailGrid() {
               <div className="relative mt-10 text-xl font-bold">
                 Such a life-changing experience. Highly recommended!
               </div>
-              <p class="mt-6 line-clamp-6 opacity-70">
+              <p class="mt-6 opacity-70">
                 "Before joining the bootcamp, I've never written a line of code.
                 I needed some structure from professionals who can help me learn
                 programming step by step. I was encouraged to enroll by a former
@@ -113,7 +113,7 @@ export default function TestimonailGrid() {
             </div>
 
             {/* Box 4 */}
-            <div className="relative rounded-xl bg-white p-10 text-gray-900">
+            <div className="relative rounded-xl bg-white p-7 text-gray-900">
               <div className="flex items-center">
                 <img
                   src="/img/assets/Testimonial-grid/image-jeanette.jpg"
@@ -138,7 +138,7 @@ export default function TestimonailGrid() {
             </div>
 
             {/* Box 5 */}
-            <div className="relative rounded-xl bg-gray-900 p-10">
+            <div className="relative rounded-xl bg-gray-900 p-7 lg:col-span-2">
               <div className="flex items-center">
                 <img
                   src="/img/assets/Testimonial-grid/image-patrick.jpg"
@@ -168,7 +168,7 @@ export default function TestimonailGrid() {
             </div>
 
             {/* Box 6 */}
-            <div className="relative rounded-xl bg-white p-10 text-gray-900">
+            <div className="block lg:hidden relative rounded-xl bg-white p-7 text-gray-900">
               <div className="flex items-center">
                 <img
                   src="/img/assets/Testimonial-grid/image-kira.jpg"
