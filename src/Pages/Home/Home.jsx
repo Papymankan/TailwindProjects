@@ -9,6 +9,11 @@ function Home() {
         </h2>
         <div className="w-7/8 mt-8 grid grid-cols-1 grid-rows-5 gap-3 sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2">
           <Card
+            to={"/fylo"}
+            title="Fylo"
+            src="/img/assets/Fylo/thumbnail.png"
+          />
+          <Card
             to={"/testimonial-grid"}
             title="Testimonial Grid"
             src="/img/assets/Testimonial-grid/thumbnail.png"

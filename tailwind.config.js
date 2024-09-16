@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode:'class',
   theme: {
     screens: {
       sm: "480px",
@@ -23,6 +24,14 @@ export default {
         grayishViolet: 'hsl(257, 7%, 63%)',
         veryDarkBlue: 'hsl(255, 11%, 22%)',
         veryDarkViolet: 'hsl(260, 8%, 14%) ',
+
+        darkBlue: 'hsl(217, 28%, 15%)',
+        darkBlue1: 'hsl(218, 28%, 13%)',
+        darkBlue2: 'hsl(216, 53%, 9%)',
+        darkBlue3: 'hsl(219, 30%, 18%)',
+        accentCyan: 'hsl(176, 68%, 64%)',
+        accentBlue: 'hsl(198, 60%, 50%)',
+        lightRed: 'hsl(0, 100%, 63%)',
       },
       fontFamily: {
         clipboard: ['Bai Jamjuree', 'sans-serif'],
@@ -30,6 +39,19 @@ export default {
         alata:['Alata'],
         poppins: ['Poppins', 'sans-serif'],
         grid: ['Barlow Semi Condensed', 'sans-serif'],
+        Raleway: ['Raleway', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
+      },
+      backgroundImage: (theme) => ({
+        'logo-dark-mode': "url('/img/assets/Fylo/logo-dark-mode.svg')",
+        'logo-light-mode': "url('/img/assets/Fylo/logo-light-mode.svg')",
+        'curvy-dark-mode': "url('/img/assets/Fylo/bg-curvy-dark-mode.svg')",
+        'curvy-light-mode': "url('/img/assets/Fylo/bg-curvy-light-mode.svg')",
+      }),
+      variants: {
+        extend: {
+          backgroundImage: ['dark'],
+        },
       },
       spacing: {
         180: '32rem',

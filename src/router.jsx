@@ -1,5 +1,6 @@
 import Clipboard from "./Pages/Clipboard/Clipboard";
 import EmailCard from "./Pages/EmailCard/EmailCard";
+import Fylo from "./Pages/Fylo/Fylo";
 import Home from "./Pages/Home/Home";
 import ImageGallery from "./Pages/ImageGallery/ImageGallery";
 import LoginModal from "./Pages/LoginModal/LoginModal";
@@ -20,6 +21,7 @@ const routes = [
     { path: '/loopstudio', element: <Loopstudio /> },
     { path: '/shortly', element: <Shortly /> },
     { path: '/testimonial-grid', element: <TestimonailGrid /> },
+    { path: '/fylo', element: <Fylo /> },
 ]
 
 export default routes
