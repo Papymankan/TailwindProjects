@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Fylo() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    localStorage.setItem("theme", theme == "dark" ? "light" : "dark");
+    setTheme(theme == "dark" ? "light" : "dark");
+  };
+
+  useEffect(() => {
+    if ("theme" in localStorage) {
+      let mode = JSON.stringify(localStorage.getItem("theme"));
+      setTheme(JSON.parse(mode));
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+        setTheme("light");
+        localStorage.setItem("theme", "light");
+    }
+  }, []);
+
   return (
-    <div className="dark min-h-screen w-full bg-white">
-      <div className="dark:bg-darkBlue font-opensans min-h-screen w-full dark:text-white">
+    <div
+      className={`${theme == "dark" ? "dark" : "light"} min-h-screen w-full bg-white`}
+    >
+      <div className="dark:bg-darkBlue font-opensans min-h-screen w-full dark:text-white duration-200">
         {/* Header */}
         <div className="container mx-auto flex flex-col items-center justify-between space-y-5 border-2 border-white p-10 md:flex-row md:space-y-0">
           <div className="bg-logo-light-mode dark:bg-logo-dark-mode h-16 w-44 bg-no-repeat"></div>
@@ -16,10 +38,13 @@ export default function Fylo() {
             </a>
 
             {/* DarkMode toggle */}
-            <button className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5 duration-200">
+            <button
+              className="rounded-lg p-2.5 text-sm text-gray-500 duration-200 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+              onClick={toggleTheme}
+            >
               <svg
                 id="theme-toggle-dark-icon"
-                class="dark:hidden h-5 w-5"
+                class="h-5 w-5 dark:hidden"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +54,7 @@ export default function Fylo() {
 
               <svg
                 id="theme-toggle-light-icon"
-                class="dark:block hidden h-5 w-5"
+                class="hidden h-5 w-5 dark:block"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +68,8 @@ export default function Fylo() {
             </button>
           </div>
         </div>
+
+        {/* Hero */}
       </div>
     </div>
   );
