@@ -16,8 +16,8 @@ export default function Fylo() {
       setTheme("dark");
       localStorage.setItem("theme", "dark");
     } else {
-        setTheme("light");
-        localStorage.setItem("theme", "light");
+      setTheme("light");
+      localStorage.setItem("theme", "light");
     }
   }, []);
 
@@ -25,15 +25,15 @@ export default function Fylo() {
     <div
       className={`${theme == "dark" ? "dark" : "light"} min-h-screen w-full bg-white`}
     >
-      <div className="dark:bg-darkBlue font-opensans min-h-screen w-full dark:text-white duration-200">
+      <div className="min-h-screen w-full font-opensans duration-200 dark:bg-darkBlue dark:text-white">
         {/* Header */}
-        <div className="container mx-auto flex flex-col items-center justify-between space-y-5 border-2 border-white p-10 md:flex-row md:space-y-0">
-          <div className="bg-logo-light-mode dark:bg-logo-dark-mode h-16 w-44 bg-no-repeat"></div>
+        <div className="container mx-auto flex flex-col items-center justify-between space-y-5 p-10 md:flex-row md:space-y-0">
+          <div className="h-16 w-44 bg-logo-light-mode bg-no-repeat dark:bg-logo-dark-mode"></div>
           <div className="flex items-center space-x-5">
-            <a href="#" className="hover:text-accentCyan duration-200">
+            <a href="#" className="duration-200 hover:text-accentCyan">
               Features
             </a>
-            <a href="#" className="hover:text-accentCyan duration-200">
+            <a href="#" className="duration-200 hover:text-accentCyan">
               Testimonials
             </a>
 
@@ -70,6 +70,24 @@ export default function Fylo() {
         </div>
 
         {/* Hero */}
+        <div className="w-full bg-curvy-light-mode bg-contain bg-bottom bg-no-repeat dark:bg-curvy-dark-mode pb-12">
+          <img
+            src="/img/assets/Fylo/illustration-intro.png"
+            className="mx-auto px-16"
+          />
+          <h1 className="mx-auto mt-20 max-w-2xl text-center text-3xl font-bold md:text-4xl">
+            All your files in one secure location, assessible anywhere.
+          </h1>
+          <p className="mx-auto mt-10 max-w-sm text-center text-sm md:max-w-xl md:text-lg">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends
+            family, and co-workers.
+          </p>
+          <button className="mx-auto mt-12 block rounded-full bg-accentCyan px-12 py-3 hover:opacity-80 hover:scale-105 duration-200 text-white">
+            Get Started
+          </button>
+        </div>
+
       </div>
     </div>
   );
