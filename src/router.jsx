@@ -1,3 +1,4 @@
+import Bookmark from "./Pages/Bookmark/Bookmark";
 import Clipboard from "./Pages/Clipboard/Clipboard";
 import EmailCard from "./Pages/EmailCard/EmailCard";
 import Fylo from "./Pages/Fylo/Fylo";
@@ -22,6 +23,7 @@ const routes = [
     { path: '/shortly', element: <Shortly /> },
     { path: '/testimonial-grid', element: <TestimonailGrid /> },
     { path: '/fylo', element: <Fylo /> },
+    { path: '/bookmark', element: <Bookmark /> },
 ]
 
 export default routes

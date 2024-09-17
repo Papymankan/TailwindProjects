@@ -32,6 +32,11 @@ export default {
         accentCyan: 'hsl(176, 68%, 64%)',
         accentBlue: 'hsl(198, 60%, 50%)',
         lightRed: 'hsl(0, 100%, 63%)',
+
+        softBlue: 'hsl(231, 69%, 60%)',
+        softRed: 'hsl(0, 94%, 66%)',
+        grayishBlue: 'hsl(229, 8%, 60%)',
+        veryDarkBlue2: 'hsl(229, 31%, 21%)',
       },
       fontFamily: {
         clipboard: ['Bai Jamjuree', 'sans-serif'],
@@ -41,12 +46,14 @@ export default {
         grid: ['Barlow Semi Condensed', 'sans-serif'],
         Raleway: ['Raleway', 'sans-serif'],
         opensans: ['Open Sans', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
       },
       backgroundImage: (theme) => ({
         'logo-dark-mode': "url('/img/assets/Fylo/logo-dark-mode.svg')",
         'logo-light-mode': "url('/img/assets/Fylo/logo-light-mode.svg')",
         'curvy-dark-mode': "url('/img/assets/Fylo/bg-curvy-dark-mode.svg')",
         'curvy-light-mode': "url('/img/assets/Fylo/bg-curvy-light-mode.svg')",
+        'dots': "url('/img/assets/Bookmark/bg-dots.svg')",
       }),
       variants: {
         extend: {
