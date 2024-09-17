@@ -304,13 +304,16 @@ export default function Fylo() {
         </div>
 
         {/* Comments */}
-        <div className="w-full bg-gray-50 py-10 dark:bg-darkBlue1">
+        <div className="w-full bg-gray-50 py-10 pb-80 dark:bg-darkBlue1">
           <div className="container mx-auto">
-            <img src="/img/assets/Fylo/bg-quotes.png" className="mb-4 ml-2 block w-10 md:w-20" />
+            <img
+              src="/img/assets/Fylo/bg-quotes.png"
+              className="mb-4 ml-2 block w-10 md:w-20"
+            />
 
-            <div className="flex w-full flex-col items-stretch space-y-5 md:flex-row md:space-x-5 md:space-y-0 px-5">
+            <div className="flex w-full flex-col items-stretch space-y-5 px-5 md:flex-row md:space-x-5 md:space-y-0">
               {/* comment 1 */}
-              <div className="rounded-lg bg-gray-100 lg:p-10 p-6 flex flex-col justify-between dark:bg-darkBlue3 md:w-1/3">
+              <div className="flex flex-col justify-between rounded-lg bg-gray-100 p-6 dark:bg-darkBlue3 md:w-1/3 lg:p-10">
                 <p class="text-sm leading-5 md:text-lg">
                   Fylo has improved our team productivity by an order of
                   magnitude. Since making the switch our team has become a
@@ -322,7 +325,9 @@ export default function Fylo() {
                     className="mr-4 h-12 rounded-full"
                   />
                   <div>
-                    <h3 className="text-lg font-semibold line-clamp-1">Satish Patel</h3>
+                    <h3 className="line-clamp-1 text-lg font-semibold">
+                      Satish Patel
+                    </h3>
                     <p className="text-sm font-light text-slate-300">
                       Founder & CEO. Huddle
                     </p>
@@ -331,7 +336,7 @@ export default function Fylo() {
               </div>
 
               {/* comment 2 */}
-              <div className="rounded-lg bg-gray-100 lg:p-10 p-6 flex flex-col justify-between dark:bg-darkBlue3 md:w-1/3">
+              <div className="flex flex-col justify-between rounded-lg bg-gray-100 p-6 dark:bg-darkBlue3 md:w-1/3 lg:p-10">
                 <p class="text-sm leading-5 md:text-lg">
                   Fylo has improved our team productivity by an order of
                   magnitude. Since making the switch our team has become a
@@ -343,7 +348,9 @@ export default function Fylo() {
                     className="mr-4 h-12 rounded-full"
                   />
                   <div>
-                    <h3 className="text-lg font-semibold line-clamp-1">Bruce McKenzie</h3>
+                    <h3 className="line-clamp-1 text-lg font-semibold">
+                      Bruce McKenzie
+                    </h3>
                     <p className="text-sm font-light text-slate-300">
                       Founder & CEO. Huddle
                     </p>
@@ -352,7 +359,7 @@ export default function Fylo() {
               </div>
 
               {/* comment 3 */}
-              <div className="rounded-lg bg-gray-100 lg:p-10 p-6 flex flex-col justify-between dark:bg-darkBlue3 md:w-1/3">
+              <div className="flex flex-col justify-between rounded-lg bg-gray-100 p-6 dark:bg-darkBlue3 md:w-1/3 lg:p-10">
                 <p class="text-sm leading-5 md:text-lg">
                   Fylo has improved our team productivity by an order of
                   magnitude. Since making the switch our team has become a
@@ -364,13 +371,37 @@ export default function Fylo() {
                     className="mr-4 h-12 rounded-full"
                   />
                   <div>
-                    <h3 className="text-lg font-semibold line-clamp-1">Eva Boyd</h3>
+                    <h3 className="line-clamp-1 text-lg font-semibold">
+                      Eva Boyd
+                    </h3>
                     <p className="text-sm font-light text-slate-300">
                       Founder & CEO. Huddle
                     </p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Early access */}
+        <div className="w-full bg-gray-100 px-4 dark:bg-darkBlue2">
+          <div className="relative -top-32 mx-auto max-w-4xl space-y-5 rounded-md bg-gray-200 px-16 py-8 text-center dark:bg-darkBlue3">
+            <h2 className="text-2xl font-bold">Get early access today</h2>
+            <p class="text-sm">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+            <div className="flex w-full flex-col space-y-5 md:flex-row md:space-x-4 md:space-y-0">
+              <input
+                type="text"
+                className="flex-1 rounded-full px-8 py-3 text-center text-black focus:outline-0 md:text-left"
+                placeholder="email@example.com"
+              />
+              <button className="mx-auto block w-full rounded-full bg-accentCyan px-12 py-3 text-white duration-200 hover:scale-95 hover:opacity-80 md:w-auto">
+                Get Started For Free
+              </button>
             </div>
           </div>
         </div>
