@@ -30,10 +30,13 @@ export default function Fylo() {
         <div className="container mx-auto flex flex-col items-center justify-between space-y-5 p-10 md:flex-row md:space-y-0">
           <div className="h-16 w-44 bg-logo-light-mode bg-no-repeat dark:bg-logo-dark-mode"></div>
           <div className="flex items-center space-x-5">
-            <a href="#" className="duration-200 hover:text-accentCyan">
+            <a href="#features" className="duration-200 hover:text-accentCyan">
               Features
             </a>
-            <a href="#" className="duration-200 hover:text-accentCyan">
+            <a
+              href="#Testimonials"
+              className="duration-200 hover:text-accentCyan"
+            >
               Testimonials
             </a>
 
@@ -89,7 +92,10 @@ export default function Fylo() {
         </div>
 
         {/* Feature Boxes */}
-        <div className="w-full bg-gray-50 py-10 dark:bg-darkBlue1">
+        <div
+          id="features"
+          className="w-full bg-gray-50 py-10 dark:bg-darkBlue1"
+        >
           <div className="container mx-auto flex flex-col flex-wrap items-start md:flex-row">
             {/* Feature 1 */}
             <div className="mt-12 flex w-full flex-col items-center px-4 md:w-1/2">
@@ -304,7 +310,10 @@ export default function Fylo() {
         </div>
 
         {/* Comments */}
-        <div className="w-full bg-gray-50 py-10 pb-80 dark:bg-darkBlue1">
+        <div
+          id="Testimonials"
+          className="w-full bg-gray-50 py-10 pb-80 dark:bg-darkBlue1"
+        >
           <div className="container mx-auto">
             <img
               src="/img/assets/Fylo/bg-quotes.png"
@@ -402,6 +411,163 @@ export default function Fylo() {
               <button className="mx-auto block w-full rounded-full bg-accentCyan px-12 py-3 text-white duration-200 hover:scale-95 hover:opacity-80 md:w-auto">
                 Get Started For Free
               </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="w-full bg-gray-100 px-4 pb-12 dark:bg-darkBlue2">
+          <div className="container mx-auto">
+            <div className="flex w-full justify-center md:justify-start">
+              <div className="h-16 w-44 bg-logo-light-mode bg-no-repeat dark:bg-logo-dark-mode"></div>
+            </div>
+            <div className="mt-6 flex w-full flex-col items-center justify-between space-y-5 md:flex-row md:items-start md:space-x-5 md:space-y-0">
+              {/* Footer Address */}
+              <div className="max-w-xs">
+                <div className="flex w-full items-start justify-center md:justify-start">
+                  <svg
+                    width="21"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mt-1"
+                  >
+                    <path
+                      d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
+                      fill={theme == "dark" ? "white" : "black"}
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  <p className="ml-1 tracking-wider">+1-543-123-4567</p>
+                </div>
+
+                <div className="mt-4 flex w-full items-start justify-center md:justify-start">
+                  <svg
+                    width="21"
+                    height="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mt-1"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <path d="M-2-4h24v24H-2z" />
+                      <path
+                        d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
+                        fill={theme == "dark" ? "white" : "black"}
+                      />
+                    </g>
+                  </svg>
+                  <p className="ml-1 tracking-wider">example@fylo.com</p>
+                </div>
+
+                <div className="mt-4 flex w-full items-start justify-center text-center md:justify-start md:text-left">
+                  <svg
+                    width="25"
+                    height="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mt-1"
+                  >
+                    <path
+                      d="M6.188 0C2.74 0 0 2.79 0 6.3 0 10.98 6.188 18 6.188 18s6.187-7.02 6.187-11.7c0-3.51-2.74-6.3-6.188-6.3zm0 8.55c-1.238 0-2.21-.99-2.21-2.25s.972-2.25 2.21-2.25c1.237 0 2.21.99 2.21 2.25s-.973 2.25-2.21 2.25z"
+                      fill={theme == "dark" ? "white" : "black"}
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  <p className="ml-1 tracking-wider">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nisi, non.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center space-y-8 md:flex-row md:items-start md:space-x-5 md:space-y-0">
+                {/* Footer Links */}
+                <div className="flex flex-col items-start space-y-8 md:flex-row md:space-x-8 md:space-y-0">
+                  {/* col 1 */}
+                  <div className="flex flex-col space-y-2 text-center md:text-left">
+                    <a href="#" className="duration-200 hover:text-accentCyan">
+                      About Us
+                    </a>
+                    <a href="#" className="duration-200 hover:text-accentCyan">
+                      Jobs
+                    </a>
+                    <a href="#" className="duration-200 hover:text-accentCyan">
+                      Press
+                    </a>
+                    <a href="#" className="duration-200 hover:text-accentCyan">
+                      Blog
+                    </a>
+                  </div>
+
+                  {/* col 2 */}
+                  <div className="flex flex-col space-y-2 text-center md:text-left">
+                    <a href="#" className="duration-200 hover:text-accentCyan">
+                      Contact Us
+                    </a>
+                    <a href="#" className="duration-200 hover:text-accentCyan">
+                      Terms
+                    </a>
+                    <a href="#" className="duration-200 hover:text-accentCyan">
+                      Privacy
+                    </a>
+                  </div>
+                </div>
+
+                {/* Footer Socials */}
+                <div className="flex items-center space-x-3">
+                  <div className="cursor-pointer rounded-full border-2 border-gray-400 p-2 dark:border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="gray"
+                      fill="transparent"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <rect x="4" y="4" width="16" height="16" rx="4" />
+                      <circle cx="12" cy="12" r="3" />
+                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                  </div>
+
+                  <div className="cursor-pointer rounded-full border-2 border-gray-400 p-2 dark:border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.5"
+                      stroke="gray"
+                      fill="gray"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                  </div>
+
+                  <div className="cursor-pointer rounded-full border-2 border-gray-400 p-2 dark:border-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class=""
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="0.5"
+                      stroke="gray"
+                      fill="gray"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
