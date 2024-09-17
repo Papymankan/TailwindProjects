@@ -76,12 +76,11 @@ body {
   }
 }
 
-
 /* Loopstudio */
 /* Shortly */
 
-.cta-section{
-  background-image: url('/img/assets/Shortly/bg-boost-desktop.svg');
+.cta-section {
+  background-image: url("/img/assets/Shortly/bg-boost-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -94,3 +93,15 @@ body {
 }
 
 /* Shortly */
+/* Bookmark */
+
+@media (min-width: 976px) {
+  .bg-hero {
+    width: 2500px;
+    height: 300px;
+    left: 50%;
+    @apply absolute bg-softBlue top-52 rounded-l-full
+  }
+}
+/* absolute left-[80%] top-52 z-0 hidden h-64 w-96 rounded-l-full bg-softBlue lg:block xl:w-180 */
+/* Bookmark */
