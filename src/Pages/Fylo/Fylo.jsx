@@ -266,6 +266,7 @@ export default function Fylo() {
           </div>
         </div>
 
+        {/* Stay Productive */}
         <div className="w-full bg-gray-50 py-10 dark:bg-darkBlue1">
           <div className="container mx-auto flex flex-col items-center md:flex-row">
             <div className="w-full px-3 md:w-1/2">
@@ -274,7 +275,7 @@ export default function Fylo() {
                 className=""
               />
             </div>
-            <div className="w-full px-3 md:w-1/2 flex flex-col items-center md:items-start">
+            <div className="flex w-full flex-col items-center px-3 md:w-1/2 md:items-start">
               <h2 className="mx-auto mt-8 max-w-md text-center text-2xl font-bold md:mx-0 md:mt-0 md:text-left md:text-4xl">
                 Stay productive, wherever you are
               </h2>
@@ -297,6 +298,78 @@ export default function Fylo() {
                   See how Fylo works
                   <img src="/img/assets/Fylo/icon-arrow.svg" className="ml-1" />
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Comments */}
+        <div className="w-full bg-gray-50 py-10 dark:bg-darkBlue1">
+          <div className="container mx-auto">
+            <img src="/img/assets/Fylo/bg-quotes.png" className="mb-4 ml-2 block w-10 md:w-20" />
+
+            <div className="flex w-full flex-col items-stretch space-y-5 md:flex-row md:space-x-5 md:space-y-0 px-5">
+              {/* comment 1 */}
+              <div className="rounded-lg bg-gray-100 lg:p-10 p-6 flex flex-col justify-between dark:bg-darkBlue3 md:w-1/3">
+                <p class="text-sm leading-5 md:text-lg">
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+                <div className="mt-6 flex w-full items-center">
+                  <img
+                    src="/img/assets/Fylo/profile-1.jpg"
+                    className="mr-4 h-12 rounded-full"
+                  />
+                  <div>
+                    <h3 className="text-lg font-semibold line-clamp-1">Satish Patel</h3>
+                    <p className="text-sm font-light text-slate-300">
+                      Founder & CEO. Huddle
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* comment 2 */}
+              <div className="rounded-lg bg-gray-100 lg:p-10 p-6 flex flex-col justify-between dark:bg-darkBlue3 md:w-1/3">
+                <p class="text-sm leading-5 md:text-lg">
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+                <div className="mt-6 flex w-full items-center">
+                  <img
+                    src="/img/assets/Fylo/profile-2.jpg"
+                    className="mr-4 h-12 rounded-full"
+                  />
+                  <div>
+                    <h3 className="text-lg font-semibold line-clamp-1">Bruce McKenzie</h3>
+                    <p className="text-sm font-light text-slate-300">
+                      Founder & CEO. Huddle
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* comment 3 */}
+              <div className="rounded-lg bg-gray-100 lg:p-10 p-6 flex flex-col justify-between dark:bg-darkBlue3 md:w-1/3">
+                <p class="text-sm leading-5 md:text-lg">
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+                <div className="mt-6 flex w-full items-center">
+                  <img
+                    src="/img/assets/Fylo/profile-3.jpg"
+                    className="mr-4 h-12 rounded-full"
+                  />
+                  <div>
+                    <h3 className="text-lg font-semibold line-clamp-1">Eva Boyd</h3>
+                    <p className="text-sm font-light text-slate-300">
+                      Founder & CEO. Huddle
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
