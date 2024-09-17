@@ -51,19 +51,19 @@ export default function Loopstudio() {
           </div>
           {/* Nav Hamburger */}
           <button
-            className={`hamburger z-50 block ${showMenu && "-space-y-0"} h-8 w-8 cursor-pointer space-y-2 md:hidden `}
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            <div
-              className={`hamburger-top w-8 border duration-200 ${showMenu && "rotate-45"}`}
-            ></div>
-            <div
-              className={`hamburger-top w-8 border duration-200 ${showMenu && "hidden"}`}
-            ></div>
-            <div
-              className={`hamburger-top w-8 border duration-200 ${showMenu && "-rotate-45"}`}
-            ></div>
-          </button>
+          className={`z-50 block h-8 w-8 cursor-pointer ${!showMenu && "space-y-1.5"} lg:hidden ${showMenu && "-space-y-0.5"}`}
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <div
+            className={`w-8 border duration-200 ${showMenu && "rotate-45"}`}
+          ></div>
+          <div
+            className={`w-8 border duration-200 ${showMenu && "hidden"}`}
+          ></div>
+          <div
+            className={`w-8 border duration-200 ${showMenu && "-rotate-45"}`}
+          ></div>
+        </button>
 
           <div
             className={`absolute bottom-0 left-0 right-0 top-0 min-h-screen w-full ${showMenu ? "flex" : "hidden"} z-40 flex-col space-y-3 overflow-hidden bg-black pl-10 pt-32 font-josefin text-xl text-white`}
