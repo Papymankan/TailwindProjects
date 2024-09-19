@@ -65,8 +65,8 @@ export default function Bookmark() {
 
       {/* Hero */}
       <div className="overflow-hidde relative w-full">
-        <div className="container mx-auto mt-10 flex flex-col items-center justify-between px-3 lg:flex-row-reverse">
-            {/* Hero Image */}
+        <div className="container mx-auto mt-10 flex flex-col items-center justify-between px-4 lg:flex-row-reverse">
+          {/* Hero Image */}
           <div className="relative mx-auto lg:mx-0 lg:w-1/2">
             <div className="bg-hero"></div>
             <img
@@ -99,6 +99,81 @@ export default function Bookmark() {
                 class="rounded border-2 border-gray-300 bg-gray-300 p-4 text-sm font-semibold text-black shadow-md duration-200 hover:bg-white hover:text-gray-600 md:text-base"
               >
                 Get It On Firefox
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Features */}
+
+      <div className="container mx-auto mt-16 px-4">
+        <h2 className="text-center text-4xl font-semibold">Features</h2>
+        <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+
+        <div
+          id="tabs-section"
+          className="container relative mx-auto my-6 mt-8 px-6"
+        >
+          {/* Tabs links */}
+          <div className="mx-auto flex max-w-xl flex-col justify-center space-y-4 md:flex-row md:items-center md:space-x-10 md:space-y-0 md:border-b-2">
+            <div
+              class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
+              data-target="panel-1"
+            >
+              <span className="relative top-0.5 border-b-4 border-softRed py-4 duration-200">
+                Simple Bookmarking
+              </span>
+            </div>
+
+            <div
+              class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
+              data-target="panel-1"
+            >
+              <span className="relative top-0.5 py-4 duration-200">
+                Simple Bookmarking
+              </span>
+            </div>
+
+            <div
+              class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
+              data-target="panel-1"
+            >
+              <span className="relative top-0.5 py-4 duration-200">
+                Simple Bookmarking
+              </span>
+            </div>
+          </div>
+
+          <div className="container flex flex-col space-y-10 py-16 lg:flex-row lg:space-x-12 lg:space-y-0">
+            {/* features images */}
+            <div className="relative mx-auto lg:mx-0 lg:w-1/2">
+              <div className="bg-tabs"></div>
+              <img
+                src="/img/assets/Bookmark/illustration-features-tab-1.svg"
+                alt=""
+                className="relative z-10 w-full overflow-x-visible xl:left-32 xl:w-auto"
+              />
+            </div>
+            {/* features text */}
+            <div className="mx-auto lg:mx-0 lg:w-1/2">
+              <h2 className="text-center text-4xl font-semibold md:text-left">
+                Bookmark in one click
+              </h2>
+              <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue lg:mx-0 lg:text-left">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <a
+                href="#"
+                class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base lg:inline-block"
+              >
+                More info
               </a>
             </div>
           </div>

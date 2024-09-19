@@ -85,7 +85,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 976px) {
+@media screen(lg) {
   .cta-section {
     background-image: url("/img/assets/Shortly/bg-boost-mobile.svg");
     background-position: center;
@@ -95,12 +95,19 @@ body {
 /* Shortly */
 /* Bookmark */
 
-@media (min-width: 976px) {
+@media screen(lg) {
   .bg-hero {
     width: 2500px;
     height: 300px;
     left: 50%;
-    @apply absolute bg-softBlue top-52 rounded-l-full
+    @apply absolute top-52 rounded-l-full bg-softBlue;
+  }
+
+  .bg-tabs {
+    width: 2500px;
+    height: 300px;
+    right: 40%;
+    @apply absolute top-32 rounded-r-full bg-softBlue;
   }
 }
 /* absolute left-[80%] top-52 z-0 hidden h-64 w-96 rounded-l-full bg-softBlue lg:block xl:w-180 */
