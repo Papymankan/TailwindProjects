@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function Bookmark() {
   const [showMenu, setShowMenu] = useState(false);
+  const [tab, setTab] = useState(1);
 
   return (
     <div className="min-h-screen w-full overflow-hidden bg-white font-rubik">
@@ -123,60 +124,130 @@ export default function Bookmark() {
           <div className="mx-auto flex max-w-xl flex-col justify-center space-y-4 md:flex-row md:items-center md:space-x-10 md:space-y-0 md:border-b-2">
             <div
               class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
-              data-target="panel-1"
+              onClick={()=>setTab(1)}
             >
-              <span className="relative top-0.5 border-b-4 border-softRed py-4 duration-200">
-                Simple Bookmarking
-              </span>
-            </div>
-
-            <div
-              class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
-              data-target="panel-1"
-            >
-              <span className="relative top-0.5 py-4 duration-200">
-                Simple Bookmarking
-              </span>
-            </div>
-
-            <div
-              class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
-              data-target="panel-1"
-            >
-              <span className="relative top-0.5 py-4 duration-200">
-                Simple Bookmarking
-              </span>
-            </div>
-          </div>
-
-          <div className="container flex flex-col space-y-10 py-16 lg:flex-row lg:space-x-12 lg:space-y-0">
-            {/* features images */}
-            <div className="relative mx-auto lg:mx-0 lg:w-1/2">
-              <div className="bg-tabs"></div>
-              <img
-                src="/img/assets/Bookmark/illustration-features-tab-1.svg"
-                alt=""
-                className="relative z-10 w-full overflow-x-visible xl:left-32 xl:w-auto"
-              />
-            </div>
-            {/* features text */}
-            <div className="mx-auto lg:mx-0 lg:w-1/2">
-              <h2 className="text-center text-4xl font-semibold md:text-left">
-                Bookmark in one click
-              </h2>
-              <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue lg:mx-0 lg:text-left">
-                Organize your bookmarks however you like. Our simple
-                drag-and-drop interface gives you complete control over how you
-                manage your favourite sites.
-              </p>
-              <a
-                href="#"
-                class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base lg:inline-block"
+              <span
+                className={`relative top-0.5 ${tab == 1 && "border-b-4 border-softRed"} py-4 duration-200`}
               >
-                More info
-              </a>
+                Simple Bookmarking
+              </span>
+            </div>
+
+            <div
+              class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
+              onClick={()=>setTab(2)}
+            >
+              <span
+                className={`relative top-0.5 ${tab == 2 && "border-b-4 border-softRed"} py-4 duration-200`}
+              >
+                Speedy Searching
+              </span>
+            </div>
+
+            <div
+              class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
+              onClick={()=>setTab(3)}
+            >
+              <span
+                className={`relative top-0.5 ${tab == 3 && "border-b-4 border-softRed"} py-4 duration-200`}
+              >
+                Easy Sharing
+              </span>
             </div>
           </div>
+
+          {tab == 1 && (
+            <div className="container flex flex-col space-y-10 py-16 lg:flex-row lg:space-x-12 lg:space-y-0">
+              {/* features images */}
+              <div className="relative mx-auto lg:mx-0 lg:w-1/2">
+                <div className="bg-tabs"></div>
+                <img
+                  src="/img/assets/Bookmark/illustration-features-tab-1.svg"
+                  alt=""
+                  className="relative z-10 w-full overflow-x-visible xl:left-32 xl:w-auto"
+                />
+              </div>
+              {/* features text */}
+              <div className="mx-auto lg:mx-0 lg:w-1/2">
+                <h2 className="text-center text-4xl font-semibold md:text-left">
+                  Bookmark in one click
+                </h2>
+                <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue lg:mx-0 lg:text-left">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <a
+                  href="#"
+                  class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base lg:inline-block"
+                >
+                  More info
+                </a>
+              </div>
+            </div>
+          )}
+
+          {tab == 2 && (
+            <div className="container flex flex-col space-y-10 py-16 lg:flex-row lg:space-x-12 lg:space-y-0">
+              {/* features images */}
+              <div className="relative mx-auto lg:mx-0 lg:w-1/2">
+                <div className="bg-tabs"></div>
+                <img
+                  src="/img/assets/Bookmark/illustration-features-tab-2.svg"
+                  alt=""
+                  className="relative z-10 w-full overflow-x-visible xl:left-32 xl:w-auto"
+                />
+              </div>
+              {/* features text */}
+              <div className="mx-auto lg:mx-0 lg:w-1/2">
+                <h2 className="text-center text-4xl font-semibold lg:text-left">
+                  Intelligent search
+                </h2>
+                <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue lg:mx-0 lg:text-left">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <a
+                  href="#"
+                  class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base lg:inline-block"
+                >
+                  More info
+                </a>
+              </div>
+            </div>
+          )}
+
+          {tab == 3 && (
+            <div className="container flex flex-col space-y-10 py-16 lg:flex-row lg:space-x-12 lg:space-y-0">
+              {/* features images */}
+              <div className="relative mx-auto lg:mx-0 lg:w-1/2">
+                <div className="bg-tabs"></div>
+                <img
+                  src="/img/assets/Bookmark/illustration-features-tab-3.svg"
+                  alt=""
+                  className="relative z-10 w-full overflow-x-visible xl:left-32 xl:w-auto"
+                />
+              </div>
+              {/* features text */}
+              <div className="mx-auto lg:mx-0 lg:w-1/2">
+                <h2 className="text-center text-4xl font-semibold md:text-left">
+                  Share your bookmarks
+                </h2>
+                <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue lg:mx-0 lg:text-left">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable a link that you can send at the click of a
+                  button.
+                </p>
+                <a
+                  href="#"
+                  class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base lg:inline-block"
+                >
+                  More info
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
