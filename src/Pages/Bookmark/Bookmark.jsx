@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function Bookmark() {
   const [showMenu, setShowMenu] = useState(false);
   const [tab, setTab] = useState(1);
+  const [accordion, setAccordion] = useState(2);
 
   return (
     <div className="min-h-screen w-full overflow-hidden bg-white font-rubik">
@@ -107,7 +108,6 @@ export default function Bookmark() {
       </div>
 
       {/* Features */}
-
       <div className="container mx-auto mt-16 px-4">
         <h2 className="text-center text-4xl font-semibold">Features</h2>
         <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue">
@@ -124,7 +124,7 @@ export default function Bookmark() {
           <div className="mx-auto flex max-w-xl flex-col justify-center space-y-4 md:flex-row md:items-center md:space-x-10 md:space-y-0 md:border-b-2">
             <div
               class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
-              onClick={()=>setTab(1)}
+              onClick={() => setTab(1)}
             >
               <span
                 className={`relative top-0.5 ${tab == 1 && "border-b-4 border-softRed"} py-4 duration-200`}
@@ -135,7 +135,7 @@ export default function Bookmark() {
 
             <div
               class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
-              onClick={()=>setTab(2)}
+              onClick={() => setTab(2)}
             >
               <span
                 className={`relative top-0.5 ${tab == 2 && "border-b-4 border-softRed"} py-4 duration-200`}
@@ -146,7 +146,7 @@ export default function Bookmark() {
 
             <div
               class="flex cursor-pointer justify-center border-b-2 text-center text-gray-600 hover:text-softRed md:w-1/3 md:border-0"
-              onClick={()=>setTab(3)}
+              onClick={() => setTab(3)}
             >
               <span
                 className={`relative top-0.5 ${tab == 3 && "border-b-4 border-softRed"} py-4 duration-200`}
@@ -248,6 +248,221 @@ export default function Bookmark() {
               </div>
             </div>
           )}
+        </div>
+      </div>
+
+      {/* Download boxes */}
+      <div className="container mx-auto mt-16 px-4">
+        <h2 className="text-center text-4xl font-semibold">
+          Download the extension
+        </h2>
+        <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue">
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+
+        <div className="mx-auto my-10 flex max-w-5xl flex-col items-center space-y-10 lg:flex-row lg:space-x-5 lg:space-y-0">
+          <div className="relative w-full rounded-xl px-1 py-8 shadow-xl lg:w-1/3">
+            <img
+              src="/img/assets/Bookmark/logo-chrome.svg"
+              alt=""
+              className="mx-auto"
+            />
+            <h1 className="mt-4 text-center text-xl font-bold">
+              Add to Chrome
+            </h1>
+            <p className="mx-auto mt-2 max-w-sm text-center text-grayishBlue">
+              Minimum Version 62
+            </p>
+            <div className="mt-6 h-2 w-full bg-dots bg-repeat-x"></div>
+            <div className="mt-5 w-full px-5">
+              <a
+                href="#"
+                class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base"
+              >
+                App & Install Application
+              </a>
+            </div>
+          </div>
+
+          <div className="relative w-full rounded-xl px-1 py-8 shadow-xl lg:top-8 lg:w-1/3">
+            <img
+              src="/img/assets/Bookmark/logo-firefox.svg"
+              alt=""
+              className="mx-auto"
+            />
+            <h1 className="mt-4 text-center text-xl font-bold">
+              Add to FireFox
+            </h1>
+            <p className="mx-auto mt-2 max-w-sm text-center text-grayishBlue">
+              Minimum Version 55
+            </p>
+            <div className="mt-6 h-2 w-full bg-dots bg-repeat-x"></div>
+            <div className="mt-5 w-full px-5">
+              <a
+                href="#"
+                class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base"
+              >
+                App & Install Application
+              </a>
+            </div>
+          </div>
+
+          <div className="relative w-full rounded-xl px-1 py-8 shadow-xl lg:top-16 lg:w-1/3">
+            <img
+              src="/img/assets/Bookmark/logo-opera.svg"
+              alt=""
+              className="mx-auto"
+            />
+            <h1 className="mt-4 text-center text-xl font-bold">
+              Add to Chrome
+            </h1>
+            <p className="mx-auto mt-2 max-w-sm text-center text-grayishBlue">
+              Minimum Version 49
+            </p>
+            <div className="mt-6 h-2 w-full bg-dots bg-repeat-x"></div>
+            <div className="mt-5 w-full px-5">
+              <a
+                href="#"
+                class="mt-5 block rounded border-2 border-softBlue bg-softBlue p-4 text-center text-sm font-semibold text-white shadow-md duration-200 hover:bg-white hover:text-softBlue md:text-base"
+              >
+                App & Install Application
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ */}
+      <div className="container mx-auto mt-40 px-4">
+        <h2 className="text-center text-4xl font-semibold">
+          Frequently Asked Questions
+        </h2>
+        <p className="mx-auto mt-5 max-w-sm text-center text-grayishBlue">
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+
+        <div className="mx-auto mt-10 max-w-2xl overflow-hidden">
+          <div className="mb-4 w-full border-b">
+            <div
+              className="group veryDarkBlue2 flex w-full cursor-pointer items-center justify-between py-4 text-lg"
+              onClick={() => {
+                if (accordion == 2) {
+                  setAccordion(0);
+                } else {
+                  setAccordion(2);
+                }
+              }}
+            >
+              <p  className="group-hover:text-softRed duration-200">What is Bookmark ?</p>
+              <button>
+                <img
+                  src="/img/assets/Bookmark/icon-arrow.svg"
+                  alt=""
+                  className={`${accordion == 2 && "rotate-180"} duration-300`}
+                />
+              </button>
+            </div>
+            <div
+              className={`w-full overflow-hidden text-justify text-grayishBlue ${accordion != 2 ? "max-h-0" : "max-h-screen"} transition-all duration-300 ease-in-out mb-2`}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              repellat amet doloribus consequuntur eos similique provident
+              tempora voluptates iure quia fuga dicta voluptatibus culpa
+              mollitia recusandae delectus id suscipit labore?
+            </div>
+          </div>
+
+          <div className="mb-4 w-full border-b">
+            <div
+              className="group veryDarkBlue2 flex w-full cursor-pointer items-center justify-between py-4 text-lg"
+              onClick={() => {
+                if (accordion == 1) {
+                  setAccordion(0);
+                } else {
+                  setAccordion(1);
+                }
+              }}
+            >
+              <p className="group-hover:text-softRed duration-200">How can I request a new browser ?</p>
+              <button>
+                <img
+                  src="/img/assets/Bookmark/icon-arrow.svg"
+                  alt=""
+                  className={`${accordion == 1 && "rotate-180"} duration-300`}
+                />
+              </button>
+            </div>
+            <div
+              className={`w-full overflow-hidden text-justify text-grayishBlue ${accordion != 1 ? "max-h-0" : "max-h-screen"} transition-all duration-300  ease-in-out  mb-2`}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              repellat amet doloribus consequuntur eos similique provident
+              tempora voluptates iure quia fuga dicta voluptatibus culpa
+              mollitia recusandae delectus id suscipit labore?
+            </div>
+          </div>
+
+          <div className="mb-4 w-full border-b">
+            <div
+              className="group veryDarkBlue2 flex w-full cursor-pointer items-center justify-between py-4 text-lg"
+              onClick={() => {
+                if (accordion == 3) {
+                  setAccordion(0);
+                } else {
+                  setAccordion(3);
+                }
+              }}
+            >
+              <p className="group-hover:text-softRed duration-200">Is ther a mobile app ?</p>
+              <button>
+                <img
+                  src="/img/assets/Bookmark/icon-arrow.svg"
+                  alt=""
+                  className={`${accordion == 3 && "rotate-180"} duration-300`}
+                />
+              </button>
+            </div>
+            <div
+              className={`w-full overflow-hidden text-justify text-grayishBlue ${accordion != 3 ? "max-h-0" : "max-h-screen"} transition-all duration-300  ease-in-out  mb-2`}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              repellat amet doloribus consequuntur eos similique provident
+              tempora voluptates iure quia fuga dicta voluptatibus culpa
+              mollitia recusandae delectus id suscipit labore?
+            </div>
+          </div>
+
+          <div className="mb-4 w-full">
+            <div
+              className="group veryDarkBlue2 flex w-full cursor-pointer items-center justify-between py-4 text-lg"
+              onClick={() => {
+                if (accordion == 4) {
+                  setAccordion(0);
+                } else {
+                  setAccordion(4);
+                }
+              }}
+            >
+              <p className="group-hover:text-softRed duration-200">What about other Chromium browsers ?</p>
+              <button>
+                <img
+                  src="/img/assets/Bookmark/icon-arrow.svg"
+                  alt=""
+                  className={`${accordion == 4 && "rotate-180"} duration-300`}
+                />
+              </button>
+            </div>
+            <div
+              className={`w-full overflow-hidden text-justify text-grayishBlue ${accordion != 4 ? "max-h-0" : "max-h-screen"} transition-all duration-300  ease-in-out  mb-2`}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              repellat amet doloribus consequuntur eos similique provident
+              tempora voluptates iure quia fuga dicta voluptatibus culpa
+              mollitia recusandae delectus id suscipit labore?
+            </div>
+          </div>
         </div>
       </div>
     </div>
