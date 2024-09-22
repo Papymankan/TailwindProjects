@@ -1,0 +1,2 @@
+# Clipboard
+![](/FullScreen/Clipboard.png)
