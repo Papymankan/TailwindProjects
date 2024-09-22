@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Bookmark() {
   const [showMenu, setShowMenu] = useState(false);
   const [tab, setTab] = useState(1);
   const [accordion, setAccordion] = useState(2);
+
+ const CheckWidth = ()=>{
+    if(window.innerWidth > 976){
+      setShowMenu(false)
+    }
+ }
+
+  window.addEventListener('resize' , CheckWidth)
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden scroll-smooth bg-white font-rubik">
@@ -65,7 +73,7 @@ export default function Bookmark() {
         </button>
 
         {showMenu && (
-          <div className="fixed bottom-0 left-0 right-0 top-0 z-20 flex h-screen w-screen flex-col items-center bg-veryDarkBlue2 px-16 py-24 text-white opacity-90">
+          <div className="fixed bottom-0 left-0 right-0 top-0 z-20 flex lg:hidden h-screen w-screen flex-col items-center bg-veryDarkBlue2 px-16 py-24 text-white opacity-90">
             <a
               href="#features"
               className="w-full py-3 text-center text-xl uppercase"
@@ -577,12 +585,12 @@ export default function Bookmark() {
           </div>
           <div className="mt-6 flex items-center space-x-6 md:mt-0">
             <img
-              src="public/img/assets/Bookmark/icon-twitter.svg"
+              src="/img/assets/Bookmark/icon-twitter.svg"
               alt=""
               className="cursor-pointer"
             />
             <img
-              src="public/img/assets/Bookmark/icon-facebook.svg"
+              src="/img/assets/Bookmark/icon-facebook.svg"
               alt=""
               className="cursor-pointer"
             />
